@@ -25,13 +25,11 @@
   <header class="bg-background fixed top-0 left-0  items-center z-10 w-full shadow-md">
     <div class="w-full font-poppins text-primary">
       <div class="flex item-center justify-between relative  px-6 py-2 md:px-8 md:py-4">
-        <div class="flex gap-2">
-          <a href="#home" class="font-extrabold block text-3xl md:text-5xl">Ci</a>
-          <a class="pt-1">
-            <lord-icon src="https://cdn.lordicon.com/lzgmgrnn.json" trigger="loop" delay="1000" colors="primary:#524F62"
-              style="width:40px;height:40px">
-            </lord-icon>
-          </a>
+        <div class="flex gap-1">
+          <a href="#home" class="mt-1 sm:mt-5 font-extrabold block text-3xl md:text-5xl">Ci</a>
+          <lord-icon src="https://cdn.lordicon.com/lzgmgrnn.json" trigger="loop" delay="1000" colors="primary:#524F62"
+            style="width:35px;height:35px" class="mt-1 lg:mt-3">
+          </lord-icon>
         </div>
 
 
@@ -66,14 +64,14 @@
 
   </header>
   <!-- Home -->
-  <section id="home" class="pt-24">
+  <section id="home" class="pt-32">
     <div class="">
       <div class="flex justify-center">
         <div class="text-primary text-center justify-center">
           <div class="flex items-center justify-center pt-4"
             style="transform: scale(1); transition: transform 0.3s ease;"
             onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-            <img src="./dist/img/profpic.svg" alt="Profile Picture" class="pb-2" />
+            <img src="./dist/img/profpic.svg" alt="Profile Picture" class="pb-4 fade-in-cling-image" />
           </div>
           <h1 class="font-extrabold text-2xl font-poppins md:text-5xl">
             IGNACIA KARINA NATANIA
@@ -96,6 +94,26 @@
       </div>
     </div>
   </section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const image = document.querySelector('.fade-in-cling-image');
+      const homeSection = document.getElementById('home');
+
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            image.classList.remove('visible');
+            // Force reflow to restart the animation
+            void image.offsetWidth;
+            image.classList.add('visible');
+          }
+        });
+      }, { threshold: 0.5 });
+
+      observer.observe(homeSection);
+    });
+  </script>
   <!-- end of Home -->
 
   <!-- projects -->
@@ -475,7 +493,8 @@
                     deepened my technical skills and problem-solving abilities, preparing me to make meaningful
                     contributions in the digital world.</p>
                   <div class="flex flex-wrap gap-1 text-xs py-2 font-bold md:text-sm md:gap-2 ">
-                    <a href="https://drive.google.com/file/d/1MQAZP-d7tDyIhjVJM4RHVykT08_jbuHX/view?usp=sharing" target="_blank">
+                    <a href="https://drive.google.com/file/d/1MQAZP-d7tDyIhjVJM4RHVykT08_jbuHX/view?usp=sharing"
+                      target="_blank">
                       <h6
                         class="border cursor-pointer border-primary py-1 px-2 rounded-md bg-primary text-background hover:text-primary hover:bg-background hover:border-primary ">
                         See Certificate

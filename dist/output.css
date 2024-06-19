@@ -556,6 +556,29 @@ video {
 .m-auto {
   margin: auto;
 }
+.fade-in-cling-image {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+.fade-in-cling-image.visible {
+  opacity: 1;
+  transform: scale(1);
+  animation: cling-effect 0.5s 1.5s ease forwards;
+}
+
+@keyframes cling-effect {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.1);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
 
 .mt-8 {
   margin-top: 2rem;
@@ -567,6 +590,9 @@ video {
 
 .mt-4 {
   margin-top: 1rem;
+}
+.mt-5 {
+  margin-top: 1.5rem;
 }
 .mt-3 {
   margin-top: 0.5rem;
