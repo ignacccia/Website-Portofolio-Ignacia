@@ -558,14 +558,15 @@ video {
 }
 .fade-in-cling-image {
   opacity: 0;
+  filter: blur(10px);
   transform: scale(0.95);
-  transition: opacity 1.5s ease, transform 1.5s ease;
+  transition: opacity 1.5s ease, transform 1.5s ease, filter 1.5s ease;
 }
 
 .fade-in-cling-image.visible {
   opacity: 1;
+  filter: blur(0);
   transform: scale(1);
-  animation: cling-effect 0.5s 1.5s ease forwards;
 }
 
 @keyframes cling-effect {
@@ -579,7 +580,6 @@ video {
       transform: scale(1);
   }
 }
-
 .mt-8 {
   margin-top: 2rem;
 }
