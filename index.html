@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="dist/img/sparkles.png" />
-  <title>Hi, Ignacia here!</title>
+  <title>Ignacia Karina</title>
 
   <link href="dist/output.css" rel="stylesheet" />
 
@@ -19,6 +19,11 @@
   <!-- icon -->
   <script src="https://kit.fontawesome.com/869b693f02.js" crossorigin="anonymous"></script>
   <script src="https://cdn.lordicon.com/lordicon.js"></script>
+  <style>
+    html {
+        scroll-behavior: smooth;
+    }
+</style>
 </head>
 
 <body class="bg-background">
@@ -38,12 +43,10 @@
             class="hidden md:block md:static md:max-w-full text-base md:text-lg  absolute py-3  bg-background md:bg-transparent md:shadow-none shadow-lg  max-w-[150px] w-full rounded-sm right-6 top-10 md:px-5 md:py-0 ">
 
             <ul class="block md:flex">
-              <li class="group opacity-75 hover:opacity-100 px-4"><a href="#projects" class="flex py-1 ">Projects</a>
-              </li>
 
               <li class="group opacity-75 hover:opacity-100 px-4"><a href="#about" class="flex py-1 ">About</a></li>
 
-              <li class="group opacity-75 hover:opacity-100 px-4"><a href="#skill-set" class="flex py-1 ">Skills</a>
+              <li class="group opacity-75 hover:opacity-100 px-4"><a href="#projects" class="flex py-1 ">Projects</a>
               </li>
 
               <li class="group opacity-75 hover:opacity-100 px-4"><a href="#experiences"
@@ -81,17 +84,14 @@
           </div>
 
           <div class="flex justify-center gap-3 mt-10 md:gap-6">
-            <a href="#projects"
-            class="text-background border bg-primary px-8 py-1 rounded-2xl font-bold text-base md:text-lg md:rounded-xl md:px-20 md:py-2"
-            style="transition: none;"
-            onmouseover="this.style.backgroundColor='bg-primary'; this.style.color='text-primary'"
-            onmouseout="this.style.backgroundColor='bg-background'; this.style.color='text-background';">
-            My Projects
+            <a href="#about"
+            class="text-background border bg-primary px-8 py-1 rounded-2xl font-bold text-base md:text-lg md:rounded-xl md:px-14 md:py-2 hover:border-primary hover:bg-background hover:text-primary">
+            Discover More
           </a>
           
             <a href="https://drive.google.com/file/d/1jaqPz8nQBEiXx9LOA9cS2fpymZNcAazl/view?usp=sharing" target="_blank"
               class="px-4 py-1 border border-primary rounded-2xl  font-bold text-base hover:bg-primary hover:text-background md:text-lg md:rounded-xl md:px-14 md:py-2">
-              Career Details
+              My Resume
               <i class="fa-solid fa-circle-chevron-right pl-1 text-l"></i>
             </a>
           </div>
@@ -121,128 +121,10 @@
   </script>
   <!-- end of Home -->
 
-  <!-- projects -->
-  <section id="projects">
-    <div class="mt-40 pt-20 text-primary">
-      <h3 class="font-bold text-xl md:text-3xl pb-6 underline text-center">
-        MY PROJECTS
-      </h3>
-      <div class="flex flex-wrap md:gap-10 justify-center px-8">
-        <div id="card-donora"
-          class="project-cont shadow-lg pb-5 font-montserrat text-primary rounded-lg overflow-hidden max-w-sm mt-10 md:mt-12 md:shadow-xl relative"
-          style="transform: scale(1); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'"
-          onmouseout="this.style.transform='scale(1)'">
-          <div>
-            <img src="./dist/img/donora.svg" alt="Donora" />
-          </div>
-          <div class="px-5 py-4 md:px-10 ">
-            <h4 class="text-lg font-extrabold py-1 md:py-2 md:text-xl">DONORA</h4>
-            <p class="text-sm text-justify pb-2 md:pb-4 md:text-base">Developed for a thesis
-              research project, which aims to create an alternative system for managing emergency blood requests. The
-              application offers 10 main features, including authentication, account management, reward points,
-              and blood stock information.
-            </p>
-            <div class="flex flex-wrap gap-1 text-xs py-2 font-bold md:text-sm md:gap-2 ">
-              <h6 class="border border-primary py-1 px-2 rounded-sm bg-primary text-background">
-                HTML
-              </h6>
-              <h6 class="border border-primary py-1 px-2 rounded-sm bg-background text-primary">
-                CSS
-              </h6>
-              <h6 class="border border-primary py-1 px-2 rounded-sm bg-primary text-background">
-                Laravel
-              </h6>
-              <h6 class="border border-primary py-1 px-2 rounded-sm bg-background text-primary">
-                PHP
-              </h6>
-              <h6 class="border border-primary py-1 px-2 rounded-sm bg-primary text-background">
-                Tailwind CSS
-              </h6>
-              <h6 class="border border-primary py-1 px-2 rounded-sm bg-background text-primary">
-                JavaScript
-              </h6>
-              <h6 class="border border-primary py-1 px-2 rounded-sm bg-primary text-background">
-                jQuery
-              </h6>
-              <h6 class="border border-primary py-1 px-2 rounded-sm bg-background text-primary">
-                AJAX
-              </h6>
-            </div>
-          </div>
-        </div>
-
-        <div id="card-drizy"
-          class="project-cont shadow-lg pb-5 font-montserrat text-primary rounded-lg overflow-hidden max-w-sm mt-10 md:mt-12 md:shadow-xl relative"
-          style="transform: scale(1); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'"
-          onmouseout="this.style.transform='scale(1)'">
-          <div>
-            <img src="./dist/img/drizy.svg" alt="drizy" />
-          </div>
-          <div class="px-5 py-4 md:px-10 ">
-            <h4 class="text-lg font-extrabold py-1 md:py-2 md:text-xl">Web Drizycraft</h4>
-            <p class="text-sm text-justify pb-2 md:pb-4 md:text-base">Freelance project for Drizy Studio, Indonesia's
-              graphic design studio specializing in SVG cut files. Drizy Studio delivers high-quality designs
-              for crafters, designers, and a diverse audience, including SVG cut file design, fonts, and design
-              templates.
-            </p>
-            <div class="flex flex-wrap gap-1 text-xs py-2 font-bold md:text-sm md:gap-2 ">
-              <h6 class="border border-primary py-1 px-2 rounded-sm bg-primary text-background">
-                HTML
-              </h6>
-              <h6 class="border border-primary py-1 px-2 rounded-sm bg-background text-primary">
-                CSS
-              </h6>
-              <h6 class="border border-primary py-1 px-2 rounded-sm bg-primary text-background">
-                Next.js
-              </h6>
-              <h6 class="border border-primary py-1 px-2 rounded-sm bg-background text-primary">
-                JavaScript
-              </h6>
-              <h6 class="border border-primary py-1 px-2 rounded-sm bg-primary text-background">
-                Tailwind CSS
-              </h6>
-            </div>
-          </div>
-        </div>
-
-        <div id="card-tkl"
-          class="project-cont shadow-lg pb-5 font-montserrat text-primary rounded-lg overflow-hidden max-w-sm mt-10 md:mt-12 md:shadow-xl relative"
-          style="transform: scale(1); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'"
-          onmouseout="this.style.transform='scale(1)'">
-          <div>
-            <img src="./dist/img/tkl.svg" alt="TKL Digital" />
-          </div>
-          <div class="px-5 py-4 md:px-10 ">
-            <h4 class="text-lg font-extrabold py-1 md:py-2 md:text-xl">TKL Digital</h4>
-            <p class="text-sm text-justify pb-2 md:pb-4 md:text-base">TKL is a form used to record the
-              activities of machine operators or packers, previously using Google Spreadsheet, which was deemed
-              ineffective. This
-              project aims to enhance this digitization through the TKL Digital Website.
-            </p>
-            <div class="flex flex-wrap gap-1 text-xs py-2 font-bold md:text-sm md:gap-2 ">
-              <h6 class="border border-primary py-1 px-2 rounded-sm bg-primary text-background">
-                HTML
-              </h6>
-              <h6 class="border border-primary py-1 px-2 rounded-sm bg-background text-primary">
-                CSS
-              </h6>
-              <h6 class="border border-primary py-1 px-2 rounded-sm bg-primary text-background">
-                Bootstrap
-              </h6>
-              <h6 class="border border-primary py-1 px-2 rounded-sm bg-background text-primary">
-                JavaScript
-              </h6>
-            </div>
-          </div>
-        </div>
-
-  </section>
-  <!-- end of projects -->
-
   <div class="md:flex md:justify-center pt-8 md:pt-24 md:flex-row-reverse md:gap-48 m-auto">
     <!-- ABOUT ME -->
     <section id="about">
-      <div class="pt-56 pb-24 pr-7 pl-10 md:pt-56">
+      <div class="pt-56 pr-7 pl-10 md:pt-56">
         <div class="flex rounded-xl ring-2 ring-primary h-80 relative about-ring">
           <div
             class="shadow-lg rounded-2xl px-5 py-8 absolute -translate-x-5 -translate-y-20 bg-background overflow-hidden md:-translate-x-10 about-content">
@@ -374,7 +256,7 @@
   <section id="experiences">
     <div class="">
       <div class="flex justify-center">
-        <div class="pt-24 pb-4 md:pt-36  text-primary text-center">
+        <div class="pt-24 md:pt-36  text-primary text-center">
           <h3 class="font-bold text-xl font-poppins md:text-3xl underline">
             EXPERIENCES
           </h3>
@@ -555,23 +437,148 @@
     </div>
   </section>
 
+  <!-- projects -->
+  <section id="projects">
+    <div class="pt-20 pb-20 text-primary">
+      <h3 class="font-bold text-xl md:text-3xl pb-6 underline text-center">
+        MY PROJECTS
+      </h3>
+      <div class="flex flex-wrap md:gap-10 justify-center px-8">
+        <div id="card-donora"
+          class="project-cont shadow-lg pb-5 font-montserrat text-primary rounded-xl overflow-hidden max-w-sm mt-10 md:mt-12 md:shadow-xl relative"
+          style="transform: scale(1); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'"
+          onmouseout="this.style.transform='scale(1)'">
+          <div>
+            <img src="./dist/img/donora.svg" alt="Donora" />
+          </div>
+          <div class="px-5 py-4 md:px-10 ">
+            <h4 class="text-lg font-extrabold py-1 md:py-2 md:text-xl">DONORA</h4>
+            <p class="text-sm text-justify pb-2 md:pb-4 md:text-base">Developed for a thesis
+              research project, which aims to create an alternative system for managing emergency blood requests. The
+              application offers 10 main features, including authentication, account management, reward points,
+              and blood stock information.
+            </p>
+            <div class="flex flex-wrap gap-1 text-xs py-2 font-bold md:text-sm md:gap-2 ">
+              <h6 class="border border-primary py-1 px-2 rounded-sm bg-primary text-background">
+                HTML
+              </h6>
+              <h6 class="border border-primary py-1 px-2 rounded-sm bg-background text-primary">
+                CSS
+              </h6>
+              <h6 class="border border-primary py-1 px-2 rounded-sm bg-primary text-background">
+                Laravel
+              </h6>
+              <h6 class="border border-primary py-1 px-2 rounded-sm bg-background text-primary">
+                PHP
+              </h6>
+              <h6 class="border border-primary py-1 px-2 rounded-sm bg-primary text-background">
+                Tailwind CSS
+              </h6>
+              <h6 class="border border-primary py-1 px-2 rounded-sm bg-background text-primary">
+                JavaScript
+              </h6>
+              <h6 class="border border-primary py-1 px-2 rounded-sm bg-primary text-background">
+                jQuery
+              </h6>
+              <h6 class="border border-primary py-1 px-2 rounded-sm bg-background text-primary">
+                AJAX
+              </h6>
+            </div>
+          </div>
+        </div>
+
+        <div id="card-drizy"
+          class="project-cont shadow-lg pb-5 font-montserrat text-primary rounded-xl overflow-hidden max-w-sm mt-10 md:mt-12 md:shadow-xl relative"
+          style="transform: scale(1); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'"
+          onmouseout="this.style.transform='scale(1)'">
+          <div>
+            <img src="./dist/img/drizy.svg" alt="drizy" />
+          </div>
+          <div class="px-5 py-4 md:px-10 ">
+            <h4 class="text-lg font-extrabold py-1 md:py-2 md:text-xl">Web Drizycraft</h4>
+            <p class="text-sm text-justify pb-2 md:pb-4 md:text-base">Freelance project for Drizy Studio, Indonesia's
+              graphic design studio specializing in SVG cut files. Drizy Studio delivers high-quality designs
+              for crafters, designers, and a diverse audience, including SVG cut file design, fonts, and design
+              templates.
+            </p>
+            <div class="flex flex-wrap gap-1 text-xs py-2 font-bold md:text-sm md:gap-2 ">
+              <h6 class="border border-primary py-1 px-2 rounded-sm bg-primary text-background">
+                HTML
+              </h6>
+              <h6 class="border border-primary py-1 px-2 rounded-sm bg-background text-primary">
+                CSS
+              </h6>
+              <h6 class="border border-primary py-1 px-2 rounded-sm bg-primary text-background">
+                Next.js
+              </h6>
+              <h6 class="border border-primary py-1 px-2 rounded-sm bg-background text-primary">
+                JavaScript
+              </h6>
+              <h6 class="border border-primary py-1 px-2 rounded-sm bg-primary text-background">
+                Tailwind CSS
+              </h6>
+            </div>
+          </div>
+        </div>
+
+        <div id="card-tkl"
+          class="project-cont shadow-lg pb-5 font-montserrat text-primary rounded-xl overflow-hidden max-w-sm mt-10 md:mt-12 md:shadow-xl relative"
+          style="transform: scale(1); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'"
+          onmouseout="this.style.transform='scale(1)'">
+          <div>
+            <img src="./dist/img/tkl.svg" alt="TKL Digital" />
+          </div>
+          <div class="px-5 py-4 md:px-10 ">
+            <h4 class="text-lg font-extrabold py-1 md:py-2 md:text-xl">TKL Digital</h4>
+            <p class="text-sm text-justify pb-2 md:pb-4 md:text-base">TKL is a form used to record the
+              activities of machine operators or packers, previously using Google Spreadsheet, which was deemed
+              ineffective. This
+              project aims to enhance this digitization through the TKL Digital Website.
+            </p>
+            <div class="flex flex-wrap gap-1 text-xs py-2 font-bold md:text-sm md:gap-2 ">
+              <h6 class="border border-primary py-1 px-2 rounded-sm bg-primary text-background">
+                HTML
+              </h6>
+              <h6 class="border border-primary py-1 px-2 rounded-sm bg-background text-primary">
+                CSS
+              </h6>
+              <h6 class="border border-primary py-1 px-2 rounded-sm bg-primary text-background">
+                Bootstrap
+              </h6>
+              <h6 class="border border-primary py-1 px-2 rounded-sm bg-background text-primary">
+                JavaScript
+              </h6>
+            </div>
+          </div>
+        </div>
+
+  </section>
+  <!-- end of projects -->
+
+
+
   <!-- footer -->
   <footer id="contact">
-    <div class="flex flex-wrap justify-center  text-background bg-primary py-4 gap-5 md:gap-10 md:py-6">
+    <div class="flex flex-wrap justify-center text-background bg-primary py-4 gap-10 md:gap-10 md:py-6">
       <a href="https://www.linkedin.com/in/ignacccia" target="_blank"> <i
-          class="fa-brands fa-linkedin-in cursor-pointer opacity-80 hover:opacity-100 md:text-2xl "
-          style="transform: scale(1); transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.2)'"
+          class="fa-brands fa-linkedin-in cursor-pointer opacity-80 hover:opacity-100 md:text-3xl "
+          style="transform: scale(1); transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.1)'"
           onmouseout="this.style.transform='scale(1)'"></i></a>
 
       <a href="https://github.com/ignacccia" target="_blank"><i
           class="fa-brands fa-github cursor-pointer opacity-80 hover:opacity-100 md:text-2xl "
-          style="transform: scale(1); transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.2)'"
+          style="transform: scale(1); transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.1)'"
           onmouseout="this.style.transform='scale(1)'"></i></a>
 
       <a href="https://mail.google.com/mail/?view=cm&source=mailto&to=ignaciataniaa@gmail.com/" target="_blank"><i
           class="fa-solid fa-envelope cursor-pointer opacity-80 hover:opacity-100 md:text-2xl "
-          style="transform: scale(1); transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.2)'"
+          style="transform: scale(1); transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.1)'"
           onmouseout="this.style.transform='scale(1)'"></i></a>
+
+          <a href="https://instagram.com/ignacccia" target="_blank"><i
+            class="fa fa-instagram cursor-pointer opacity-80 hover:opacity-100 md:text-2xl "
+            style="transform: scale(1); transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.1)'"
+            onmouseout="this.style.transform='scale(1)'"></i></a>    
     </div>
   </footer>
   <script src="dist/js/script.js"></script>
